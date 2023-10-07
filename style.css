@@ -1,0 +1,103 @@
+h1{
+    font-family: cursive;
+    font-weight:bolder;
+    text-align: center;
+}
+h2{
+    font-family: cursive;
+    font-weight: bolder;   
+}
+h3{
+    font-family: cursive;
+    font-weight:bold;
+    text-align: center; 
+}
+
+a.nav-link{
+    color: rgb(12, 12, 12);
+    font-size: x-large;
+    margin: 4px 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+a.nav-link:hover{
+    color: rgb(255, 2, 2);
+    font-size: x-large;
+    margin: 4px 15px;
+    transform: scale(0.9);
+}
+
+header{
+    background-color: rgb(231, 231, 25);
+}
+
+.bio-para{
+    font-family: monospace;
+}
+
+.part-1{
+    background-color: rgb(226, 230, 207);
+    background-image: url(./Images/home\ page1.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+
+.card-text{
+    font-family: cursive;
+    text-align: center;
+    font-size: medium; 
+}
+
+.h6{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.ft{
+    background-color: rgb(67, 240, 182);
+    border-radius: 20px;
+    text-align: end;
+    padding:0px 10px;
+    color: rgb(3, 153, 3);
+}
+input{
+    border: none;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.733);
+}
+#exampleFormControlTextarea1{
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+
+#lnames{
+    font-family: cursive;
+    color: rgb(3, 153, 3);
+    font-size: larger;
+}
+.contact-info{
+    padding-left: 20px;
+    margin-left: 4rem;
+}
+.address{
+    font-size: large;
+    font-family: cursive;
+}
+
+.info a{
+    color: rgb(7, 7, 7);
+    font-family: cursive;
+    font-size: large;
+    text-decoration: none;
+}
+.part-2{
+    background-color: gainsboro;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
