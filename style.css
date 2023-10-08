@@ -2,10 +2,13 @@ h1{
     font-family: cursive;
     font-weight:bolder;
     text-align: center;
+    color: black;
 }
 h2{
     font-family: cursive;
-    font-weight: bolder;   
+    font-weight: bolder; 
+    text-align: center; 
+    color: black; 
 }
 h3{
     font-family: cursive;
@@ -15,20 +18,21 @@ h3{
 
 a.nav-link{
     color: rgb(12, 12, 12);
-    font-size: x-large;
-    margin: 4px 15px;
+    font-size: large;
+    font-weight: 600;
     transition: transform 0.2s ease-in-out;
 }
 
 a.nav-link:hover{
     color: rgb(255, 2, 2);
-    font-size: x-large;
-    margin: 4px 15px;
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 header{
     background-color: rgb(231, 231, 25);
+}
+#Home{
+    color: aliceblue;
 }
 
 .bio-para{
@@ -36,10 +40,10 @@ header{
 }
 
 .part-1{
-    background-color: rgb(226, 230, 207);
-    background-image: url(./Images/home\ page1.jpg);
+    background-color: rgb(233, 238, 207);
+    /* background-image: url(./Images/video.gif); */
     background-size: cover;
-    height: 1000px;
+    height: 90dvh;   
 }
 
 .card-text{
@@ -55,8 +59,8 @@ header{
 .ft{
     background-color: rgb(67, 240, 182);
     border-radius: 20px;
-    text-align: end;
-    padding:0px 10px;
+    text-align: center;
+    padding:0px 5px;
     color: rgb(3, 153, 3);
 }
 input{
@@ -92,9 +96,22 @@ input{
     background-color: gainsboro;
     font-family: cursive;
 }
+.btn{
+    transition: transform 0.1s ease-in-out;
+}
+.btn:hover{
+    transform: scale(0.99);
+    border: 1px solid black;
+}
 
 
+.p-2 img{
+    transition: transform 0.1s ease-in-out;
+}
 
+.p-2 img:hover{
+    transform: scale(0.9);
+}
 
 
 

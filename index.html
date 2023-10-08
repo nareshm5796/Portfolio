@@ -9,20 +9,21 @@
 </head>
 <body>  
     <header class="sticky-top">
-        <div class="container d-flex justify-content-between">
-            <ul class="nav justify-content-center">
+        <div class="container-fluid d-md-flex justify-content-around align-items-center">
+            <ul class="nav d-xs-flex justify-content-center">
                 <li class="nav-item ">
-                  <a class="nav-link active " aria-current="page" href="#Home">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#My Bio">My Bio</a>
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#Services">Services</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="#Resume">Resume</a>
                 </li>
@@ -30,7 +31,7 @@
                     <a class="nav-link" href="#Contact">Contact</a>
                   </li>
             </ul>
-            <div class=" d-flex p-2 icons">
+            <div class=" d-flex p-2 icons justify-content-center">
                 <a href="#" class="p-2"><img src="./Images/icons8-linkedin-50.png" alt="..." width="30px"></a>
                 <a href="#" class="p-2"><img src="./Images/icons8-facebook-50.png" alt="..." width="30px"></a>
                 <a href="#" class="p-2"><img src="./Images/icons8-instagram-50.png" alt="..." width="30px"></a>
@@ -38,45 +39,18 @@
             </div>
         </div>    
     </header>
-    <div class="part-1 d-flex flex-column justify-content-center align-items-center" id="Home">
-        <h2>Hello...</h2>
-        <h1>I'm Naresh Mudavath</h1>
-        <h2>Front-end Developer.</h2>
+
+    <div class="container-fluid part-1 d-flex flex-column justify-content-center align-items-center" id="Home">
+            <h2>Hello...</h2>
+            <h1>I'm Naresh Mudavath</h1>
+            <h2>Front-end Developer.</h2>
     </div>
-    <div class="container d-flex pt-5" id="My Bio">
-        <div class="d-lg-flex p-5"> <img src="https://preview.colorlib.com/theme/orbit/images/image_1_long.jpg" alt="" width="450px"></div>
-        <div class="d-md-flex flex-column p-5"> 
-            <h1>My Bio..</h1>
-            <p class="bio-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. <br><br> 
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-            </p>
-            <h5>HTML5</h5>
-            <div class="progress ">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%"  >60 %</div>
-            </div><br>
-            <h5>CSS3</h5>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"  >80 %</div>
-            </div><br>
-            <h5>Javascript</h5>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%"   >75 %</div>
-            </div><br>
-            <h5>Bootstrap 5</h5>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"   >80 %</div>
-            </div><br>
-            <h5>React Js</h5>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 40%"   > 40 %</div>
-            </div>
-        </div>
-    </div>
-    <div class="container p-5 " id="Portfolio" >
+
+    <div class="container p-5" id="Portfolio" >
         <h1>My Portfolio</h1>
-        <ul class="nav justify-content-center p-4">
+        <ul class="nav justify-content-left p-4">
             <li class="nav-item ">
-              <a class="nav-link active " aria-current="page" href="#">all</a>
+              <a class="nav-link active " aria-current="page" href="">All</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Packages</a>
@@ -91,8 +65,8 @@
                 <a class="nav-link" href="#">Photography</a>
             </li>
         </ul> 
-        <div class="d-flex">
-            <div class="col-4"> 
+        <div class="d-flex allpackages">
+            <div class="col-4 " id="packages"> 
                 <div class=" row p-2"><img src="./Images/col1.1.webp" alt=""></div>
                 <div class=" row p-2"><img src="./Images/col1.2.webp" alt=""></div>
                 <div class=" row p-2"><img src="./Images/col1.3.webp" alt=""></div>
@@ -107,7 +81,60 @@
             </div>
         </div>      
     </div>
-    <div class="container p-5" id="Services">
+
+    <div class="container d-md-flex" id="My Bio">
+        <div class="col-md-4 col-lg-6 p-5 "> <img class="img-fluid" src="https://preview.colorlib.com/theme/orbit/images/image_1_long.jpg" alt=""></div>
+        <div class="col-md-8 col-lg-6 d-flex flex-column pt-lg-5 "> 
+            <h1>My Bio..</h1>
+            <p class="bio-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                
+            </p>
+            <div class="d-flex">
+                <div class="col-6 pe-4">
+                    <h5>HTML5</h5>
+                    <div class="progress ">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"  >90 %</div>
+                    </div><br>
+                    <h5>CSS3</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"  >90 %</div>
+                    </div><br>
+                    <h5>Javascript</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"   >80 %</div>
+                    </div><br>
+                    <h5>Bootstrap 5</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"   >90 %</div>
+                    </div><br>
+                    <h5>React Js</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 40%"   > 40 %</div>
+                    </div><br>
+                </div>
+                <div class="col-6 ps-4">
+                    <h5>Python</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"   > 90 %</div>
+                    </div><br>
+                    <h5>Sql</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"   > 5   0 %</div>
+                    </div>
+                    <h5>Git</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"   > 90 %</div>
+                    </div><br>
+                    <h5>Github Desktop</h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%"   > 90 %</div>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+    </div>
+    
+    <!-- <div class="container p-5" id="Services">
         <h1 >Services</h1>
         <div class="d-flex justify-content-between pt-5">
             <div class="card m-3 p-5 align-items-center" style="width: 24rem;">
@@ -132,27 +159,24 @@
                 </div>
             </div>
         </div>    
-    </div>
+    </div> -->
     <div id="Resume" class="container p-5" >
         <h1 >Resume</h1>
-        <div class="d-flex pt-5">
-            <div class="p-3 pt-2">
-                <img src="https://preview.colorlib.com/theme/orbit/images/image_1_long.jpg" alt="" width="350px">
+        <div class="d-md-flex pt-5">
+            <div class="p-3 pt-2 col-sm-12 col-md-4 ">
+                <img class="img-fluid" src="https://preview.colorlib.com/theme/orbit/images/image_1_long.jpg" alt="">
             </div>
-            <div class="col-8  p-5 pt-0">
+            <div class="col-sm-12 col-md-8 p-3  pt-0">
                 <div >
                     <h2>Work Experience</h2>
-
                     <div class="d-flex justify-content-between border-bottom pt-4" >
-                        <div>
-                            <div>
-                                <h5>Front-End Developer.</h5>
-                            </div>
-                            <div class="d-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Wipro Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
+                        <div class="ps-0 ms-0">
+                            <div><h5>Front-End Developer.</h5></div>
+                            <div class="d-md-flex justify-content-between m-0 p-0"><p class="m-1 p-0">----- Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
                         </div>
-                        <div>
+                        <div class=" ps-0 ms-0">
                             <div class="d-flex justify-content-end">
-                                <p class="m-1 w-65  ft">Full-Time</p>
+                                <p class="m-0 ft">Full-Time</p>
                             </div>
                             <div>
                                 November 2022 - Present.
@@ -165,11 +189,11 @@
                             <div>
                                 <h5>Python Developer.</h5>
                             </div>
-                            <div class="d-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Nitya Software Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
+                            <div class="d-md-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Nitya Software Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
                         </div>
                         <div>
                             <div class="d-flex justify-content-end">
-                                <p class="m-1 w-65  ft">Full-Time</p>
+                                <p class="m-0 ft">Full-Time</p>
                             </div>
                             <div>
                                 april 2022 - october 2022.
@@ -180,64 +204,63 @@
                     
                     <h2 class="pt-5">Education</h2>
                     <div class="d-flex justify-content-between border-bottom pt-4" >
-                        <div>
-                            <div>
-                                <h5>Front-End Developer.</h5>
-                            </div>
-                            <div class="d-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Wipro Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
+                        <div class="ps-0 ms-0">
+                            <div><h5>Bsc in Computer Sceince.</h5></div>
+                            <div class="d-md-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Govt City College.</p><p class="m-1 p-0">Hyderabad.</p></div>
                         </div>
-                        <div>
+                        <div class=" ps-0 ms-0">
                             <div class="d-flex justify-content-end">
-                                <p class="m-1 w-65  ft">Full-Time</p>
+                                <p class="m-0 ft">Full-Time</p>
                             </div>
                             <div>
-                                November 2022 - Present.
+                                June 2018 - July 2021.
                             </div>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-between border-bottom pt-4" >
-                        <div>
-                            <div>
-                                <h5>Python Developer.</h5>
-                            </div>
-                            <div class="d-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Nitya Software Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
+                        <div class="ps-0 ms-0">
+                            <div><h5>Intermediate</h5></div>
+                            <div class="d-md-flex justify-content-between m-0 p-0"><p class="m-1 p-0 me-2">MVS Govt College.</p><p class="m-1 p-0">Mahabub Nagar.</p></div>
                         </div>
-                        <div>
+                        <div class=" ps-0 ms-0">
                             <div class="d-flex justify-content-end">
-                                <p class="m-1 w-65  ft">Full-Time</p>
+                                <p class="m-0 ft">Full-Time</p>
                             </div>
                             <div>
-                                april 2022 - october 2022.
+                                June 2016 - Mar 2018.
                             </div>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-between border-bottom pt-4" >
-                        <div>
-                            <div>
-                                <h5>Python Developer.</h5>
-                            </div>
-                            <div class="d-flex justify-content-between m-0 p-0"><p class="m-1 p-0">Nitya Software Pvt Ltd.</p><p class="m-1 p-0">Hyderabad.</p></div>
+                        <div class="ps-0 ms-0">
+                            <div><h5>School</h5></div>
+                            <div class="d-md-flex justify-content-between m-0 p-0"><p class="m-1 p-0 me-2">Z P H S (boys).</p><p class="m-1 p-0">Mahabub Nagar.</p></div>
                         </div>
-                        <div>
+                        <div class=" ps-0 ms-0">
                             <div class="d-flex justify-content-end">
-                                <p class="m-1 w-65  ft">Full-Time</p>
+                                <p class="m-0 ft">Full-Time</p>
                             </div>
                             <div>
-                                april 2022 - october 2022.
+                                Mar-2016.
                             </div>
                         </div>
                     </div>
 
-                </div>        
+                </div> 
+                <div class="pt-4 mt-2 p-2">
+                    <button type="button" class="btn p-2 m-1 ms-0" style="background-color: rgb(67, 240, 182); border-radius: 35px; width: 100px; color: black; font-size: smaller; font-weight: 600; font-family: cursive;">Here Me</button>
+                    <button type="button" class="btn p-2 m-1 ms-0" style="background-color: rgb(192, 194, 193); border-radius: 35px; width: 150px; color: black; font-size: smaller; font-weight: 600; font-family: cursive;">Download Resume</button>
+                </div>       
             </div>
         </div>
     </div>
-    <div class="container p-5" id="Contact">
+
+    <div class="container" id="Contact">
         <h1>Contact Me</h1>
-        <div class="d-flex pt-5">
-            <div class="col-7">
+        <div class="d-md-flex pt-1 ">
+            <div class="col-sm-12 col-md-7 me-5">
                 <div class="d-flex">
                     <div class="col-6 "><div class="row  p-4"><p id="lnames">First name</p><input type="text"></div></div>
                     <div class="col-6"><div class="row p-4"><p id="lnames">Last name</p><input type="text"></div></div>
@@ -251,20 +274,19 @@
                     <button type="button" class="btn p-2" style="background-color: rgb(67, 240, 182); border-radius: 35px; width: 170px; color: black; font-size: smaller; font-weight: 600; font-family: cursive;">SEND MESSAGE</button>
                 </div>
             </div>
-            <div class="pt-4 contact-info">
+            <div class="col-md-5 pt-4 contact-info p-0 m-0">
                 <h5 style="color: rgb(25, 26, 25); color: rgb(3,153,3); font-family: cursive;">Contact Info</h5>
                 <div class="pt-4"><p class="address"> Kondapur RTO-Office, Hyderabad, 500081.</p></div>
                 <div class=" pt-4 info"><a href="#">+91 7702064354</a></div>
-                <div class=" pt-4 info"><a href="#">naresh.info@gmail.com</a></div>
-                <a href="#"></a>
+                <div class=" pt-4 info"><a href="#">mnaresh6010@gmail.com</a></div>
             </div>
         </div>
-
     </div>
+
     <div class="container-fluid part-2 ">
         <div class="container p-5 pb-3">
             <div class="part-3"><h4 class="fw-bold">Connect</h4></div>
-            <div class=" d-flex p-4 pt-0 ">
+            <div class=" d-flex justify-content-center pt-0 ">
                 <a href="#" class="p-2"><img src="./Images/icons8-linkedin-50.png" alt="..." width="40px"></a>
                 <a href="#" class="p-2"><img src="./Images/icons8-facebook-50.png" alt="..." width="40px"></a>
                 <a href="#" class="p-2"><img src="./Images/icons8-instagram-50.png" alt="..." width="40px"></a>
